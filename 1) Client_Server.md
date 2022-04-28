@@ -1,28 +1,32 @@
+# Client-Server Architecture
+
 **Client - Server**
-[Browser] - [AlgoExpert]
+[Browser] - [Google]
 
-Client is the machine which sends request to the Server. Server is the machine that responds to the Client with result.
+A Client is a machine which sends request to the server. A Server is a machine that responds to the client with the result.
 
-**Note:** machine can have both roles simultaneously when being a server to the browser it can be a client to the database.
+**Note:** A machine can have both roles simultaneously when being a server to the browser, it can be a client to the database.
 
-When you type www.Algoexpert.io: browser makes a **DNS** query to find what the **IP** address of the aforementioned site is and only after that it can speak to the site.
- 
-**DNS(domain name system):** special request that goes to a predetermined list of servers and requests the IP address of the desired site.  
+When you type www.google.com, the browser makes a **DNS** query to find the **IP** address of the aforementioned site.
 
-**IP:** unique identifier of the machine.
+A **DNS(Domain Name System)** query is a special request that goes to a predetermined list of servers and requests the IP address of the desired site.
 
-After browser has received a response with **IP** address it sends an **HTTP** request to this **IP** address. Actually, it sends a bunch of bytes (characters) in packets with source address of a request (IP address of your browser/computer). 
-Every machine that has distinct IP address obtains 16000 ports
+An **IP** address is a unique identifier provied to a machine.
 
-Servers are machines which listen to requests from other machines on some **ports**. So, client has to specify which port it wants to communicate on. 
+After the browser has received the response with the **IP** address, it sends an **HTTP** request to this **IP** address. It sends a bunch of bytes (characters) in packets with the source address of the request (IP address of your browser/computer).
+
+Servers are machines which listen to requests from other machines on **ports**. So, the client has to specify which port it wants to communicate on.
 However, there are predefined ports which some protocols have:
-HTTP: 80/HTTPS: 443/DNS: 53/Secure Shell: 22
 
-After server has received a request, it understands that client wants to see HTML of the site.
-Server returns the HTML of the site which browser renders.
+- HTTP: 80
+- HTTPS: 443
+- DNS: 53
+- Secure Shell: 22
 
-**IP address** is address of the system in the Network.
-**Port** is address of the service within the System.
-So IP address + Port defines address of the particular service on the particular system
+After a server has received a request, using the data sent along the request, it understands what client has requested and responds back with the result.
 
-![Alt text](ImageRepo/Client_Server_first.png?raw=true)
+**IP address** is an address of a system in the Network.
+**Port** is an address of the service within the System.
+So IP address + Port defines address of a particular service on a particular system.
+
+![Key Terminologies](ImageRepo/Client_Server_first.png?raw=true)
